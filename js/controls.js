@@ -8,6 +8,8 @@ window.onload = function(){
     var output = document.querySelector("#output")
     var row_3 = document.querySelector("#row_3")
     var header = document.querySelector("#header")
+    var easy = document.querySelector("#easy")
+    var hard = document.querySelector("#hard")
 
     function randomNumber(x){
         return Math.floor(Math.random() * x)
@@ -50,11 +52,11 @@ window.onload = function(){
             document.querySelector(`#cell_${i}`).onclick = function(){
                 if(this.style.backgroundColor === guessColor){
                     won = true
-                    output.textContent = "Correct"
+                    output.textContent = "Correct!"
                     setColors()
                     header.style.backgroundColor = guessColor
                 } else {
-                    output.textContent = "Wrong"
+                    output.textContent = "Wrong!"
                     this.style.backgroundColor = "#748BA7"
                 }
             }
@@ -78,6 +80,8 @@ window.onload = function(){
             row_3.classList.add("hidden")
             output.textContent = ""
             header.style.backgroundColor = "#051b38"
+            easy.style.backgroundColor = "#051b38"
+            hard.style.backgroundColor = "#4C688B"
         }
         document.querySelector("#hard").onclick = function (){
             won = false
@@ -86,6 +90,8 @@ window.onload = function(){
             row_3.classList.remove("hidden")
             output.textContent = ""
             header.style.backgroundColor = "#051b38"
+            hard.style.backgroundColor = "#051b38"
+            easy.style.backgroundColor = "#4C688B"
         }
     }
 
@@ -103,6 +109,7 @@ window.onload = function(){
         setOnClick()
     }
 
+    hard.style.backgroundColor = "#051b38"
     setNewColorsButton()
     setDifficultyButtons()
     reset(difficulty)

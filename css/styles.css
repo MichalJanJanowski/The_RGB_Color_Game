@@ -20,8 +20,25 @@ p {
   margin: 0;
 }
 
+button {
+  border: none;
+  background: none;
+  height: 100%;
+  font-weight: 700;
+  color: white;
+  font-size: inherit;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  outline: none;
+}
+
+button:hover {
+  background-color: #051b38;
+}
+
 #subHeader {
   background-color: #4C688B;
+  color: white;
 }
 
 .center {
@@ -45,6 +62,10 @@ p {
   display: flex;
   width: calc(80% - 10px);
   margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
 }
 
 .w30 {
