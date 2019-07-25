@@ -10,31 +10,33 @@
 </head>
 <body>
 
-  <div class="center">
+  <div id="header" class="center">
     <h1>The RGB Color Game</h1>
     <h2>Guess the following color:</h2>
-    <h2>RGB (255, 255, 255)</h2>
-  </div>
-  
-  <div class="spread">
-    <button class="w30">New Colors</button>
-    <p class="w40"></p>
-    <button class="w15">Easy</button>
-    <button class="w15">Hard</button>
+    <h2 id="quessColor">RGB (255, 255, 255)</h2>
   </div>
 
+  <div id="subHeader">
+    <div class="spread">
+      <button id="newColors" class="w30">New Colors</button>
+      <p id="output" class="w40"></p>
+      <button id="easy" class="w15">Easy</button>
+      <button id="hard" class="w15">Hard</button>
+    </div>
+  </div> 
+  
   <div class="table">
-    <div class="row">
+    <div id="row_1" class="row">
       <div id="cell_1" class="cell"></div>
       <div id="cell_2" class="cell"></div>
       <div id="cell_3" class="cell"></div>
     </div>
-    <div class="row">
+    <div id="row_2" class="row">
       <div id="cell_4" class="cell"></div>
       <div id="cell_5" class="cell"></div>
       <div id="cell_6" class="cell"></div>
     </div>
-    <div class="row">
+    <div id="row_3" class="row">
       <div id="cell_7" class="cell"></div>
       <div id="cell_8" class="cell"></div>
       <div id="cell_9" class="cell"></div>
