@@ -42,6 +42,7 @@ window.onload = function(){
                 cell.style.backgroundColor = `rgb(${colorArray[x]})`
             }else{
                 cell.style.backgroundColor = `${guessColor}`
+                cell.style.boxShadow = '10px 10px 5px 0px rgba(0,0,0,0.75)'
             }
         }
     }
@@ -57,7 +58,8 @@ window.onload = function(){
                     header.style.backgroundColor = guessColor
                 } else {
                     output.textContent = "Wrong!"
-                    this.style.backgroundColor = "#748BA7"
+                    this.style.backgroundColor = "#d0dbf2"
+                    this.style.boxShadow = 'none';
                 }
             }
         }

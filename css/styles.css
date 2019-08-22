@@ -1,11 +1,13 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
   margin: 0;
-  background-color: #748BA7;
+  background-color: #d0dbf2;
 }
 
 h1 {
@@ -54,6 +56,11 @@ button:hover {
           flex-direction: column;
   background-color: #051b38;
   color: white;
+  height: 15vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2vh;
 }
 
 .spread {
@@ -66,6 +73,8 @@ button:hover {
       -ms-flex-align: center;
           align-items: center;
   font-size: 2rem;
+  height: 5vh;
+  font-size: 2vh;
 }
 
 .w30 {
@@ -86,7 +95,17 @@ button:hover {
 .table {
   width: 80%;
   margin: 0 auto;
-  height: 80vh;
+  height: 78vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .row {
@@ -103,9 +122,18 @@ button:hover {
   border-radius: 20px;
   width: calc(100%/3);
   margin: 5px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  border: 1px solid black;
 }
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 800px) {
+  .table {
+    width: 95%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
